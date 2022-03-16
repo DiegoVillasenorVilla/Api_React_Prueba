@@ -1,0 +1,26 @@
+.mini-container{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 0px 0px 0px;
+    box-shadow: 2px 2px  2px 2px;
+    
+}
+
+.mini-container:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+img{
+    border-radius: 10%
+}
