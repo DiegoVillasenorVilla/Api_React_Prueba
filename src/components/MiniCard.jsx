@@ -1,14 +1,14 @@
 import React from "react";
 import './MiniCard.css';
 
-export const MiniCard = (item) => {
+export const MiniCard = (props) => {
     return(
         <div className="mini-container">
             <div className="wrapper">
-                <img src={item.item.images.sm} alt="character photo"/>
-                <h1>{item.item.name}</h1>
-                <span>{item.item.biography.publisher}</span>
-                <span>{item.item.appearance.race}</span>
+                <img src={props.item.images.sm} alt="character photo"/>
+                <h1>{props.item.name}</h1>
+                <span>{props.item.biography.publisher}</span>
+                <span>{props.item.appearance.race}</span>
             </div>
         </div>
 
