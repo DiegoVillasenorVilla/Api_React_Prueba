@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect, useRef} from "react";
-import {Input} from "./components/Input";
-import {MiniCard} from "./components/MiniCard";
+import {Input} from "./components/Input/Input";
+import {MiniCard} from "./components/MiniCard/MiniCard";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
       <div className="grid-container">{FiltrarDatos?.map((item, i)=>(
         <MiniCard item={item}/>
       ))}
-      </div>
+      </div>  |
 
       <div className="container"> </div>
       
