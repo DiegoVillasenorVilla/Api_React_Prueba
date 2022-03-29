@@ -1,0 +1,54 @@
+.inputContainer{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+}
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    margin-left: 15px;
+}
+
+.headerOne{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 100px;
+}
+
+button{
+    background-color: #898080;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #292727;
+}

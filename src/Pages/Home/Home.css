@@ -1,0 +1,13 @@
+.img-home{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    width: 1000px;
+    
+}
+.titleOne{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    margin: 60px;
+}
