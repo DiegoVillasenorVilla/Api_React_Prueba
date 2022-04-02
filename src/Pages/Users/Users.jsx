@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Users.css';
 import {useState, useEffect} from "react";
 import  { Link } from "react-router-dom"; 
 import {Input} from "../../components/Input/Input";
 import {MiniCard} from "../../components/MiniCard/MiniCard";
 import { Navbar } from "../../components/Navbar/Navbar";
+import { userContext } from '../../context/userContext';
 
 
 export const Users = () => {
 
-  const [superheroe, setsuperheroe] = useState([]);
+  const {isLogin} = useContext(userContext);
+
+  const [superheroe, setSuperheroe] = useState([]);
   const [filter, setFilter] = useState('');
   //const [counter, setCounter] = useState(0);
   //const TextInput = useRef();   //ref={TextInput}
@@ -20,7 +23,7 @@ export const Users = () => {
     const fetchHeroe = async () =>{
       const response = await fetch('https://akabab.github.io/superhero-api/api/all.json');
       const data = await response.json();
-      setsuperheroe(data);
+      setSuperheroe(data);
       //TextInput.current.focus();
     }
     fetchHeroe();
@@ -31,6 +34,7 @@ export const Users = () => {
   return (
     <>
       <Navbar/>
+      <span className='loginSpan'>Usuario ha sido Logueado con Exito </span>
       <div className="Users">
        
        <Input className="input-search" placeholder="Search" onChange={handleFilter}/> 

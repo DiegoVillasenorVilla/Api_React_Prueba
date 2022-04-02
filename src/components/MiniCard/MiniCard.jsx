@@ -7,12 +7,12 @@ export const MiniCard = ({images,name,biography,appearance,powerstats,work}) => 
             <div className="wrapper">
                 <img src={images.sm} alt="character photo"/>
                 <h1>{name}</h1>
-                <span>{biography.publisher}</span>
-                <span>{appearance.race}</span>
+                <span>Publisher: {biography.publisher}</span>
+                <span> Race: {appearance.race}</span>
                 {powerstats && work ? (
                     <>
-                     <span>{powerstats.intelligence}</span>
-                     <span>{work.occupation}</span>
+                     <span>Intelligence: {powerstats.intelligence}</span>
+                     <span> Occupation: {work.occupation}</span>
                     </>
                 ) : (
                     ""

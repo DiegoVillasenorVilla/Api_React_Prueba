@@ -9,7 +9,7 @@ export const Navbar = () => {
   return(
     <div className="navbarContainer">
         
-        <Link  to="/Home" style={{textDecoration: "none"}}> 
+        <Link  to="/" style={{textDecoration: "none"}}> 
           <FontAwesomeIcon  className="iconHome" icon={faHome} />
         </Link>
          

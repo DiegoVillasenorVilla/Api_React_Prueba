@@ -1,8 +1,22 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Navbar } from "../../components/Navbar/Navbar"
+import { useNavigate } from "react-router-dom";
+import { userContext } from "../../context/userContext";
 import "./Login.css"
 
 export const Login = () => {
+
+    const navigate =  useNavigate();
+    const {dispatch} = useContext(userContext);
+    const handleLogin = () => {
+        dispatch({type: "LOGIN"});
+        goToHome();
+    };
+
+    const goToHome = () => {
+        navigate("/Users");
+    };
+    
     return(
         <div className="loginCointainer">
             <Navbar/>
@@ -17,7 +31,7 @@ export const Login = () => {
                 <input type="password" name="" id="" placeholder="*****" ></input>
             </div>
 
-            <button>Login</button>
+            <button onClick={handleLogin}>Login</button>
         </div>
     )
 }

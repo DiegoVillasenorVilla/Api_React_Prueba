@@ -15,12 +15,12 @@ export const User = () => {
           <Navbar/>
            <h1>SuperHeroe/Villain</h1>
            <MiniCard
-             images={images.sm}
+             images={images}
              name={name}
-             biography={biography.publisher}
-             appearance={appearance.race}
-             powerstats={powerstats.intelligence}
-             work={work.occupation}
+             biography={biography}
+             appearance={appearance}
+             powerstats={powerstats}
+             work={work}
 
            />
 
