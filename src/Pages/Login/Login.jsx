@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import { Navbar } from "../../components/Navbar/Navbar"
 import { useNavigate } from "react-router-dom";
 import { userContext } from "../../context/userContext";
-import "./Login.css"
+import "./Login.css";
 
 export const Login = () => {
 
@@ -16,7 +16,7 @@ export const Login = () => {
     const goToHome = () => {
         navigate("/Users");
     };
-    
+
     return(
         <div className="loginCointainer">
             <Navbar/>
