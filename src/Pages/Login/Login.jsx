@@ -7,7 +7,9 @@ import "./Login.css";
 export const Login = () => {
 
     const navigate =  useNavigate();
+
     const {dispatch} = useContext(userContext);
+    
     const handleLogin = () => {
         dispatch({type: "LOGIN"});
         goToHome();
